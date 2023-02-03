@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/drawable/custom_shape.xml" value="0.1615" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/drawable/custom_shape2.xml" value="0.1615" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1615" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/drawable/press_color.xml" value="0.1615" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/activity_teams.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/alert_dialog.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/custom_rv_layout.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/fragment_second.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/fragment_team_a.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/fragment_team_b.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/rv_custom_layout.xml" value="0.25" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/team_a_custom_layout.xml" value="0.24895833333333334" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/team_b_custom_layout.xml" value="0.24895833333333334" />
+        <entry key="..\:/NANI/SportsInteractiveApp/app/src/main/res/layout/team_custom_layout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
