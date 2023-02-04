@@ -1,5 +1,7 @@
 package com.nani.sportsinteractiveapp.Model
 
+import com.google.gson.annotations.SerializedName
+
 data class Inning(
     val AllottedOvers: String,
     val Batsmen: List<Batsmen>,

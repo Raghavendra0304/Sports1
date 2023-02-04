@@ -51,21 +51,28 @@ class Match2ATeamAdapter(val context: Context,val match2AteamplayerList:List<Mat
             val alertview:View = LayoutInflater.from(context).inflate(R.layout.alert_dialog,null)
             alertDialog.setView(alertview)
             alertDialog.setCancelable(true)
+
             val batting = alertview.findViewById<TextView>(R.id.average)
             batting.text = "Average: ${match2AteamplayerList.get(position).Batting.Average}"
+
             val runs = alertview.findViewById<TextView>(R.id.runs)
             runs.text = "Runs: ${match2AteamplayerList.get(position).Batting.Runs}"
+
             val style = alertview.findViewById<TextView>(R.id.style)
             style.text = "Style: ${match2AteamplayerList.get(position).Batting.Style}"
+
             val strikeRate = alertview.findViewById<TextView>(R.id.strikerate)
             strikeRate.text = "Strikerate: ${match2AteamplayerList.get(position).Batting.Strikerate}"
 
             val bowlAverage = alertview.findViewById<TextView>(R.id.bowl_average)
             bowlAverage.text = "Average: ${match2AteamplayerList.get(position).Bowling.Average}"
+
             val wickets = alertview.findViewById<TextView>(R.id.wickets)
             wickets.text = "Wickets: ${match2AteamplayerList.get(position).Bowling.Wickets}"
+
             val economy = alertview.findViewById<TextView>(R.id.economy)
             economy.text = "Economy: ${match2AteamplayerList.get(position).Bowling.Economyrate}"
+
             val bowlStyle = alertview.findViewById<TextView>(R.id.bowl_style)
             bowlStyle.text = "Style: ${match2AteamplayerList.get(position).Bowling.Style}"
 
@@ -73,7 +80,9 @@ class Match2ATeamAdapter(val context: Context,val match2AteamplayerList:List<Mat
             position1.text = "In at: ${match2AteamplayerList.get(position).Position}"
 
             val fullname = alertview.findViewById<TextView>(R.id.full_name)
-            fullname.text = "${match2AteamplayerList.get(position).Name_Full}"+" "+match2AteamplayerList.get(position).Iskeeper
+            fullname.text = "${match2AteamplayerList.get(position).Name_Full} ${
+                match2AteamplayerList.get(position).Iskeeper
+            }"
 
             val keeper = alertview.findViewById<TextView>(R.id.keeping)
             if (match2AteamplayerList.get(position).Iskeeper=="Keeper"&&match2AteamplayerList.get(position).Iscaptain=="Captain"){
@@ -89,7 +98,7 @@ class Match2ATeamAdapter(val context: Context,val match2AteamplayerList:List<Mat
 
             else if (match2AteamplayerList.get(position).Iskeeper=="Keeper"){
                 keeper.visibility = View.VISIBLE
-                keeper.text = "Captain"
+                keeper.text = "Keeper"
 
             }
             else{
@@ -99,7 +108,6 @@ class Match2ATeamAdapter(val context: Context,val match2AteamplayerList:List<Mat
             alertDialog.create()
             alertDialog.show()
 
-            //Toast.makeText(context, ""+playerList.get(position).Name_Full+""+playerList.get(position).Batting, Toast.LENGTH_SHORT).show()
         })
     }
 

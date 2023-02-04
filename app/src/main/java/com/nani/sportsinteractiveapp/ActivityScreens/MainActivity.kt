@@ -42,8 +42,6 @@ lateinit var progressDialog:ProgressDialog
                 progressDialog.dismiss()
                 when(response.code()){
                     200 -> {
-
-
                         val M: MatchDetails = response.body()!!
                         binding.matchTitle.text=M.Matchdetail.Series.Name
                         binding.dateTitle.text="Date: "+M.Matchdetail.Match.Date
@@ -65,7 +63,12 @@ lateinit var progressDialog:ProgressDialog
                 intent.putExtra("TeamVal",1)
                 startActivity(intent)
             })
+            scoreBtn.setOnClickListener(View.OnClickListener {
+                val intent = Intent(this@MainActivity, ScoreCardActivity::class.java)
+                startActivity(intent)
+            })
         }
+
 
         val getMatch2Details = matchDetailsInterface.getMatch2DetailsInterface()
         getMatch2Details.enqueue(object :Callback<SecondMatchModelClass>{

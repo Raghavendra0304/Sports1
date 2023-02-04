@@ -2,10 +2,12 @@ package com.nani.sportsinteractiveapp.ActivityScreens
 
 import android.annotation.SuppressLint
 import android.app.ProgressDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.color.utilities.Score
 import com.nani.sportsinteractiveapp.API.MatchDetailsInterface
 import com.nani.sportsinteractiveapp.API.MatchRetrofitInstance
 import com.nani.sportsinteractiveapp.Adapters.Adapter
@@ -142,8 +144,6 @@ class TeamsActivity : AppCompatActivity(){
                  progressDialog.dismiss()
                  when (response.code()) {
                      200 -> {
-
-                         //Toast.makeText(applicationContext, "Success in screentwo", Toast.LENGTH_SHORT).show()
                          val playerdetails: MatchDetails = response.body()!!
                          val info = playerdetails.Teams.x4.Players
                          players.add(PlayersInfo(info.x3852.Batting,info.x3852.Bowling,"Captain",info.x3852.Name_Full,info.x3852.Position))
@@ -191,5 +191,9 @@ class TeamsActivity : AppCompatActivity(){
          })
 
      }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+    }
 }
 
