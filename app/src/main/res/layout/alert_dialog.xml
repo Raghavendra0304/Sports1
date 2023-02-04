@@ -18,7 +18,31 @@
         android:text="Full Name"
         android:textColor="@color/black"
         android:textSize="20sp" />
+    <TextView
+        android:id="@+id/keeping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:text="Keeping"
+        android:textSize="18sp" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
 
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="position"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
 
     <TextView
     android:id="@+id/batting"
@@ -194,31 +218,9 @@
         android:layout_height="1dp"
         />
 
-    <TextView
-        android:id="@+id/keeping"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:textColor="@color/black"
-        android:text="Keeping"
-        android:textSize="18sp" />
-    <com.google.android.material.divider.MaterialDivider
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        />
 
-    <TextView
-        android:id="@+id/position"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="position"
-        android:layout_margin="5dp"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-    <com.google.android.material.divider.MaterialDivider
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        />
+
+
 
 
 </LinearLayout>

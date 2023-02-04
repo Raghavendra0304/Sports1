@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".ActivityScreens.MainActivity">
 
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="250dp"
@@ -66,6 +67,73 @@
                 android:layout_height="wrap_content"
                 android:text="info"
                 android:id="@+id/about_btn"
+                android:layout_gravity="center"
+                app:backgroundTint="@color/teal_200"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="25dp"
+
+        android:elevation="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/match_title2"
+                android:text="Title"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_title2"
+                android:text="Date"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_title2"
+                android:text="Time"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/venue_title2"
+                android:text="Title"
+                android:layout_gravity="center"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="info"
+                android:id="@+id/about_btn2"
                 android:layout_gravity="center"
                 app:backgroundTint="@color/teal_200"/>
 
